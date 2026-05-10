@@ -10,7 +10,7 @@ https://github.com/anthropics/claude-plugins-official
 
 ### plugins in use (continuous updates planned)
 ```
-/plugin 
+official plugin (/plugin)
  ㅁ skill-creator
  ㅁ explanatory-output-style
  ㅁ plug-dev
