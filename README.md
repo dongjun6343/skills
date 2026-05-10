@@ -17,7 +17,8 @@ https://github.com/anthropics/claude-plugins-official
  ㅁ ralph-loop
 ```
 ```
-andrej-karpathy-skills
+andrej-karpathy-skills Install
+Claude Code Plugin (recommended)
 1. /plugin marketplace add forrestchang/andrej-karpathy-skills
 2. /plugin install andrej-karpathy-skills@karpathy-skills
 ```
