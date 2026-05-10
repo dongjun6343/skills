@@ -16,4 +16,8 @@ https://github.com/anthropics/claude-plugins-official
  ㅁ plug-dev
  ㅁ ralph-loop
 ```
-
+```
+andrej-karpathy-skills
+1. /plugin marketplace add forrestchang/andrej-karpathy-skills
+2. /plugin install andrej-karpathy-skills@karpathy-skills
+```
