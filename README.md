@@ -17,8 +17,8 @@ official plugin (/plugin)
  ㅁ ralph-loop
 ```
 ```
-andrej-karpathy-skills install
-Claude Code Plugin (recommended)
+andrej-karpathy-skills (/karpathy-guidelines)
+install claude code plugin
 1. /plugin marketplace add forrestchang/andrej-karpathy-skills
 2. /plugin install andrej-karpathy-skills@karpathy-skills
 
