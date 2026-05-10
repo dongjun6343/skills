@@ -21,4 +21,6 @@ andrej-karpathy-skills install
 Claude Code Plugin (recommended)
 1. /plugin marketplace add forrestchang/andrej-karpathy-skills
 2. /plugin install andrej-karpathy-skills@karpathy-skills
+
+https://github.com/forrestchang/andrej-karpathy-skills
 ```
