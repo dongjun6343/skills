@@ -1,0 +1,4 @@
+1. Think Before Coding — 불확실하면 먼저 물어보기, 여러 해석이 있으면 제시하기
+2. Simplicity First — 요청한 것만, 불필요한 추상화 없이
+3. Surgical Changes — 요청한 것만 수정, 관련 없는 코드 건드리지 않기
+4. Goal-Driven Execution — 성공 기준을 명확히 하고 검증하며 진행
