@@ -11,6 +11,7 @@ Ask the user (or infer from context) if not already clear:
 - **Viewport size** — default is `636×1048` (phone-like). Ask if they want a different size. Common: `390×844` (iPhone 14), `412×915` (Pixel 7), desktop `1280×800`.
 - **Screens to capture** — which pages/states to visit. Infer from context if the app structure is visible.
 - **Output directory** — default to a `screen/` sibling of the project dir, or ask.
+- **Thumbnail** —항상 `1932×828px` 썸네일 1장을 추가로 캡쳐. 첫 번째 화면(가장 대표적인 화면)을 기준으로 `thumbnail.png`로 저장.
 
 ### 2. Set up Playwright
 
@@ -42,6 +43,7 @@ import path from 'path';
 
 const OUT_DIR = '<absolute_output_path>';
 const VIEWPORT = { width: 636, height: 1048 };
+const THUMBNAIL_VIEWPORT = { width: 1932, height: 828 };
 const URL = 'http://localhost:<port>';
 
 const browser = await chromium.launch();
@@ -60,6 +62,13 @@ await page.waitForFunction(
 // --- Screen 1 ---
 await page.screenshot({ path: path.join(OUT_DIR, '1_<name>.png') });
 console.log('1/<total> saved');
+
+// --- Thumbnail (1932×828, 첫 번째 화면 기준) ---
+await page.setViewportSize(THUMBNAIL_VIEWPORT);
+await page.waitForTimeout(200);
+await page.screenshot({ path: path.join(OUT_DIR, 'thumbnail.png') });
+console.log('thumbnail saved');
+await page.setViewportSize(VIEWPORT); // 나머지 화면 캡쳐를 위해 복원
 
 // --- Navigate to next screen ---
 // Prefer getByRole over getByText — it avoids ambiguity when the same text
